@@ -1,7 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enemies\Wasp\StingMover.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enemies\Wasp\WaspController.cs">
     <Files>
+      <File FileName="Assets\Scripts\Enemies\Wasp\WaspController.cs" Line="175" Column="21" />
       <File FileName="Assets\Scripts\Enemies\Wasp\StingMover.cs" Line="6" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
