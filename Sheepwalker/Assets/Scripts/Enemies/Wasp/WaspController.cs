@@ -16,6 +16,7 @@ public class WaspController : MonoBehaviour {
 	public bool facingRight;
 	bool shotsFired = false; 
 
+
 	
 	public Transform sightSheepStart, sightSheepEnd, sightSWStart, sightSWEnd;
 	public LayerMask whatIsGround;
@@ -46,23 +47,21 @@ public class WaspController : MonoBehaviour {
 			swSpotted = true;
 		}
 		
-		if (spottedSheep == false) {
+		Move ();
 			
-
-			
-		 	if (rb2d.transform.position.x >= maxRight) {
-				MoveLeft ();
-				transform.localScale = new Vector3 (-2f, 2f, 1f);
-				
-			} else if (rb2d.transform.position.x <= maxLeft) {
-				MoveRight ();
-				transform.localScale = new Vector3 (2f, 2f, 1f);
-				
-			}
+//		 	if (rb2d.transform.position.x >= maxRight) {
+//				MoveLeft ();
+//				transform.localScale = new Vector3 (-2f, 2f, 1f);
+//				
+//			} else if (rb2d.transform.position.x <= maxLeft) {
+//				MoveRight ();
+//				transform.localScale = new Vector3 (2f, 2f, 1f);
+//				
+//			}
 
 
 			
-		}
+
 
 		if (spottedSheep == true && shotsFired == true) {
 
@@ -84,25 +83,25 @@ public class WaspController : MonoBehaviour {
 		
 	}
 	
-	public void MoveRight()
-	{
-		rb2d.AddForce(new Vector2(movementSpeed, 0));
-		facingRight = true;
-		
-		
-	}
-	
-	
-	
-	public void MoveLeft()
-	{
-		rb2d.AddForce(new Vector2(-movementSpeed, 0));
-		facingRight = false;
-
-
-		
-		
-	}
+//	public void MoveRight()
+//	{
+//		rb2d.AddForce(new Vector2(movementSpeed, 0));
+//		facingRight = true;
+//		
+//		
+//	}
+//	
+//	
+//	
+//	public void MoveLeft()
+//	{
+//		rb2d.AddForce(new Vector2(-movementSpeed, 0));
+//		facingRight = false;
+//
+//
+//		
+//		
+//	}
 	
 	void Raycasting() 
 		
@@ -118,39 +117,17 @@ public class WaspController : MonoBehaviour {
 	
 	void Behaviours()
 	{
-		
-		if(spottedSheep == true) {
-				anim.SetBool ("isFlying", false);
-				anim.SetBool ("isStinging", true);
-				rb2d.isKinematic = true;
-				rb2d.velocity = Vector3.zero;
 
-				
-			}
-			
-			
-		if (spottedSheep == false) {
-			anim.SetBool ("isStinging", false);
-			anim.SetBool ("isFlying", true);
-		}
 
 		if(swSpotted == true) {
 			anim.SetBool ("isFlying", false);
-
 			anim.SetBool ("isShooting", true);
-
 
 			rb2d.isKinematic = true;
 			rb2d.velocity = Vector3.zero;
 			
 			
 		}
-		
-		
-//		if (spottedSleepwalker == false) {
-//			anim.SetBool ("isStinging", false);
-//			anim.SetBool ("isFlying", true);
-//		}
 
 		
 	}
@@ -190,5 +167,36 @@ public class WaspController : MonoBehaviour {
 
 		}
 
+	}
+
+	public void OnTriggerEnter2D(Collider2D other) 
+
+	{
+		if (other.tag == "Edge") {
+			ChangeDirection ();
+			//Debug.Log ("on trigger called");
+		}
+	}
+
+	public void ChangeDirection ()
+		
+	{
+		Debug.Log ("Change direction called");
+		facingRight = !facingRight;
+		transform.localScale = new Vector3 (transform.localScale.x *-1, 1, 1);
+		
+	}
+
+	public void Move()
+	{
+		Debug.Log ("Moving");
+		anim.SetFloat ("Speed", 1);
+		transform.Translate (GetDirection () * (movementSpeed * Time.deltaTime));
+	}
+
+	public Vector2 GetDirection()
+
+	{
+			return facingRight ? Vector2.right : Vector2.left;
 	}
 }

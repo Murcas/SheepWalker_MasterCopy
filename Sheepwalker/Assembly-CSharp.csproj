@@ -56,7 +56,7 @@
      <Compile Include="Assets\Scripts\Characters\Sleepwalker.cs" />
      <Compile Include="Assets\Scripts\Enemies\Wasp\StingMover.cs" />
      <Compile Include="Assets\Scripts\Enemies\Wasp\WaspController.cs" />
-     <Compile Include="Assets\Scripts\TargetTest.cs" />
+     <Compile Include="Assets\Scripts\IgnoreCollision.cs" />
      <Compile Include="Assets\Scripts\Terrain\CanepeController.cs" />
      <Compile Include="Assets\Scripts\Terrain\CheckpointScript.cs" />
      <Compile Include="Assets\Scripts\Terrain\HorizontalMovement.cs" />
@@ -66,11 +66,17 @@
      <Compile Include="Assets\Scripts\Traps\SawScript.cs" />
      <Compile Include="Assets\Scripts\Traps\SlimeScript.cs" />
      <Compile Include="Assets\Sting_Move.cs" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
