@@ -1,0 +1,353 @@
+fileFormatVersion: 2
+guid: e2dae38c37276504ea5ef91c082a7dbc
+timeCreated: 1457795003
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wasp_0
+    21300002: wasp_1
+    21300004: wasp_2
+    21300006: wasp_3
+    21300008: WaspShoot1
+    21300010: WaspShoot2
+    21300012: WaspShoot03
+    21300014: WaspShoot04
+    21300016: WaspShoot05
+    21300018: WaspShoot06
+    21300020: Sting_001
+    21300022: hover_1
+    21300024: hover_2
+    21300026: hover_3
+    21300028: hover_4
+    21300030: hover_5
+    21300032: hover_6
+    21300034: hover_7
+    21300036: hover_8
+    21300038: hover_9
+    21300040: hover_10
+    21300042: hover_11
+    21300044: hover_12
+    21300046: hover_13
+    21300048: hover_14
+    21300050: hover_15
+    21300052: hover_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: wasp_0
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 53
+        width: 93
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wasp_1
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 54
+        width: 93
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wasp_2
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 54
+        width: 92
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wasp_3
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 55
+        width: 94
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaspShoot1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 89
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaspShoot2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 31
+        width: 89
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaspShoot03
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 30
+        width: 96
+        height: 97
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaspShoot04
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 29
+        width: 85
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaspShoot05
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 29
+        width: 84
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WaspShoot06
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 29
+        width: 89
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sting_001
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 246
+        width: 31
+        height: 23
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_1
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 221
+        width: 97
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_2
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 221
+        width: 93
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_3
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 219
+        width: 77
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 1, z: 0, w: 0}
+    - name: hover_4
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 220
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_5
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 219
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_6
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 221
+        width: 95
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_7
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 222
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 88
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_9
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 129
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_10
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 129
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_11
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 128
+        width: 79
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_12
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 131
+        width: 89
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_13
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 130
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_14
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 128
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_15
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 129
+        width: 86
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hover_16
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 129
+        width: 91
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

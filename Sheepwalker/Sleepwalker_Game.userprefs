@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SheepController.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Sleepwalker.cs" Line="16" Column="8" />
+      <File FileName="Assets\Scripts\SheepController.cs" Line="7" Column="27" />
+      <File FileName="Assets\Scripts\FlameScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\NudgeTesterScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CheckpointScript.cs" Line="29" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

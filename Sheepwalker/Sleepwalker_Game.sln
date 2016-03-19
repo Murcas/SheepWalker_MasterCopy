@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{D52B41B9-9E01-2786-4419-C5D39168B463}") = "Sleepwalker_Game", "Assembly-CSharp.csproj", "{AA291728-2279-4E51-0DC1-5F17FE35524B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA291728-2279-4E51-0DC1-5F17FE35524B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA291728-2279-4E51-0DC1-5F17FE35524B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA291728-2279-4E51-0DC1-5F17FE35524B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA291728-2279-4E51-0DC1-5F17FE35524B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+																																																			GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+
+EndGlobal

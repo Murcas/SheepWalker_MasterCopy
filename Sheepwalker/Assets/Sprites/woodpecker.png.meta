@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: 7452591a1d5b1314ba919847465272bf
+timeCreated: 1457801664
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: woodpecker_Pecking01
+    21300002: woodpecker_Pecking02
+    21300004: woodpecker_Pecking03
+    21300006: woodpecker_Pecking
+    21300008: woodpecker_Swooping01
+    21300010: woodpecker_Swooping02
+    21300012: woodpecker_Swooping03
+    21300014: woodpecker_Swooping04
+    21300016: woodpecker_Swooping05
+    21300018: woodpecker_Swooping06
+    21300020: woodpecker_Looking01
+    21300022: woodpecker_Looking02
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: woodpecker_Pecking01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 43
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: woodpecker_Pecking02
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0
+        width: 40
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: woodpecker_Pecking03
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 45
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: woodpecker_Pecking
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1
+        width: 45
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: woodpecker_Swooping01
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 168
+        width: 104
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: woodpecker_Swooping02
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 167
+        width: 108
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: woodpecker_Swooping03
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 128
+        width: 105
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: woodpecker_Swooping04
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 127
+        width: 104
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: woodpecker_Swooping05
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 87
+        width: 111
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: woodpecker_Swooping06
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 88
+        width: 103
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: woodpecker_Looking01
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1
+        width: 40
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: woodpecker_Looking02
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 4
+        width: 37
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

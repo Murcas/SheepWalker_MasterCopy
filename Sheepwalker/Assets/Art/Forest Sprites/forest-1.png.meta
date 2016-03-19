@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: 204a7a80edb7dc74a95a82035dd59a11
+timeCreated: 1454675693
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: treeStump
+    21300002: Treetrunk1
+    21300004: TreeTrunk2
+    21300006: treetop
+    21300008: branchLeft
+    21300010: BranchRight
+    21300012: CanepeFlat1
+    21300014: CanapeFlat2
+    21300016: CanepeTop1
+    21300018: CanepeTop2
+    21300020: flower1
+    21300022: forest-1_0
+    21300024: forest-1_1
+    21300026: forest-1_2
+    21300028: forest-1_3
+    21300030: forest-1_4
+    21300032: forest-1_5
+    21300034: forest-1_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: treeStump
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 485
+        height: 207
+      alignment: 1
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Treetrunk1
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 761
+        width: 180
+        height: 256
+      alignment: 1
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TreeTrunk2
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 761
+        width: 180
+        height: 256
+      alignment: 1
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: treetop
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 264
+        height: 160
+      alignment: 1
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: branchLeft
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 915
+        width: 195
+        height: 102
+      alignment: 1
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BranchRight
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 134
+        width: 187
+        height: 125
+      alignment: 1
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CanepeFlat1
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 5
+        width: 212
+        height: 93
+      alignment: 1
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CanapeFlat2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 196
+        height: 97
+      alignment: 1
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CanepeTop1
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 540
+        width: 288
+        height: 178
+      alignment: 1
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CanepeTop2
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 270
+        width: 303
+        height: 197
+      alignment: 1
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flower1
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 303
+        width: 113
+        height: 164
+      alignment: 1
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: forest-1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 719
+        width: 436
+        height: 298
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: forest-1_1
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 814
+        width: 200
+        height: 100
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: forest-1_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 468
+        width: 362
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: forest-1_3
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 468
+        width: 362
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: forest-1_4
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 282
+        width: 102
+        height: 185
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: forest-1_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 119
+        width: 497
+        height: 140
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: forest-1_6
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 160
+        width: 60
+        height: 99
+      alignment: 1
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
