@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class StingMover : MonoBehaviour {
-
+	
+//Test text for github test
 
 		public float speed = 1;
 //		public float RotationSpeed = 1;
