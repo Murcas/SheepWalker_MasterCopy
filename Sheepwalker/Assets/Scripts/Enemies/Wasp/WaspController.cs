@@ -172,8 +172,10 @@ public class WaspController : MonoBehaviour {
 
 	public void RestartMotion () {
 
-
+		swSpotted = false;
 		rb2d.isKinematic = false;
+		anim.SetBool ("isFlying", true);
+		anim.SetBool ("isShooting", false);
 
 
 
