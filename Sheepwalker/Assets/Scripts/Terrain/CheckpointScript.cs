@@ -17,16 +17,16 @@ public class CheckpointScript : MonoBehaviour
 	
 	void FixedUpdate () 
 	{
-		if(sleepwalker.rb2d.transform.position.y < -5)
-		{
-			sleepwalker.rb2d.transform.position = checkPoint.transform.position;
-		}
-
-		if (sheepController.rb2d.transform.position.y < -5)
-		{
-			sheepController.rb2d.transform.position = checkPoint.transform.position;
-	
-		}
+//		if(sleepwalker.rb2d.transform.position.y < -5)
+//		{
+//			sleepwalker.rb2d.transform.position = checkPoint.transform.position;
+//		}
+//
+//		if (sheepController.rb2d.transform.position.y < -5)
+//		{
+//			sheepController.rb2d.transform.position = checkPoint.transform.position;
+//	
+//		}
 	
 	}
 }
