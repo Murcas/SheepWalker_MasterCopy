@@ -43,6 +43,17 @@ public class Sleepwalker : MonoBehaviour
 
 	void Update () {
 
+		if (!Grounded) {
+			anim.SetLayerWeight (1, 1);
+			anim.SetBool("isNudged", true);
+		} 
+		
+		else 
+			
+		{
+			anim.SetLayerWeight (1, 0);
+		}
+
 	}
 
 

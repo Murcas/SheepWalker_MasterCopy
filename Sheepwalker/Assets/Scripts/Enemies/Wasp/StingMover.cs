@@ -9,12 +9,14 @@ public class StingMover : MonoBehaviour {
 //		public float RotationSpeed = 1;
 		Transform sleepwalker;
 	    private Transform myTransform;
+		WaspController waspController;
 		
 		
 void Start() {     
 			sleepwalker = GameObject.FindGameObjectWithTag("Sleepwalker").transform;
 		    myTransform = transform;
-			//myTransform.LookAt (sheep);
+			waspController = FindObjectOfType<WaspController> ();
+			
 			
 
 		}
@@ -24,21 +26,14 @@ void Start() {
 
 		transform.LookAt (sleepwalker.transform.position); 
 		transform.position = Vector3.MoveTowards (transform.position, sleepwalker.transform.position, speed * Time.deltaTime);
+		waspController.swSpotted = false;
+
 	
-		//sheepAttack();
+
 
 }
 
-//	public void sheepAttack() {
-//
-//
-////		myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
-////		Quaternion.LookRotation(sheep.position - myTransform.position), RotationSpeed*Time.deltaTime);
-//		
 
-//		//move towards the player
-//		myTransform.position += myTransform.forward * speed * Time.deltaTime;
-//	}
 	}
 
 

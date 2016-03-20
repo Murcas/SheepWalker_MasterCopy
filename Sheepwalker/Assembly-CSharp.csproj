@@ -45,6 +45,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\RamboScript.cs" />
      <Compile Include="Assets\Scripts\BackgroundPhysics\BackgroundFollow.cs" />
      <Compile Include="Assets\Scripts\BackgroundPhysics\BackgroundScroller.cs" />
      <Compile Include="Assets\Scripts\BackgroundPhysics\LevelManager.cs" />

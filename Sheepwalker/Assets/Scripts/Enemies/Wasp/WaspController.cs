@@ -20,8 +20,9 @@ public class WaspController : MonoBehaviour {
 	
 	public Transform sightSheepStart, sightSheepEnd, sightSWStart, sightSWEnd;
 	public LayerMask whatIsGround;
+	[SerializeField]
 	private bool spottedSheep, spottedSleepwalker;
-	private bool swSpotted =  false;
+	public bool swSpotted =  false;
 
 	public StingMover stingMover;
 
@@ -36,6 +37,7 @@ public class WaspController : MonoBehaviour {
 		rb2d = gameObject.GetComponent<Rigidbody2D> ();
 		sheep = GameObject.FindGameObjectWithTag("Sheep").transform;
 		stingMover = FindObjectOfType<StingMover> ();
+		facingRight = true;
 		
 	}
 	
@@ -45,9 +47,11 @@ public class WaspController : MonoBehaviour {
 		
 		if (spottedSleepwalker == true) {
 			swSpotted = true;
+			anim.SetBool ("isShooting", true);
+			anim.SetLayerWeight (1, 1);
 		}
 		
-		Move ();
+		//Move ();
 			
 //		 	if (rb2d.transform.position.x >= maxRight) {
 //				MoveLeft ();
@@ -63,11 +67,11 @@ public class WaspController : MonoBehaviour {
 			
 
 
-		if (spottedSheep == true && shotsFired == true) {
-
-			RestartMotion();
-
-		}
+//		if (spottedSheep == true && shotsFired == true) {
+//
+//			RestartMotion();
+//
+//		}
 		
 		
 		
@@ -119,16 +123,24 @@ public class WaspController : MonoBehaviour {
 	{
 
 
-		if(swSpotted == true) {
-			anim.SetBool ("isFlying", false);
-			anim.SetBool ("isShooting", true);
+		if (swSpotted) {
 
 			rb2d.isKinematic = true;
 			rb2d.velocity = Vector3.zero;
-			
-			
+
+
+		} 
+
+		else 
+		
+		{
+			anim.SetLayerWeight (1, 0);
+			anim.SetBool ("isShooting", false);
+
 		}
 
+		//swSpotted = false;
+		Move ();
 		
 	}
 
@@ -149,23 +161,23 @@ public class WaspController : MonoBehaviour {
 
 	public void RestartMotion () {
 
-		swSpotted = false;
-		rb2d.isKinematic = false;
-		anim.SetBool ("isFlying", true);
-		anim.SetBool ("isShooting", false);
+//		swSpotted = false;
+//		rb2d.isKinematic = false;
+//		anim.SetBool ("isFlying", true);
+//		anim.SetBool ("isShooting", false);
+//
+//
+//
+//		if (rb2d.transform.position.x < maxRight || rb2d.transform.position.x > maxLeft) {
+//
+//
+//			transform.localScale = new Vector3 (-2f, 2f, 1f);
+//			rb2d.AddForce(new Vector2(-movementSpeed, 0));
 
 
 
-		if (rb2d.transform.position.x < maxRight || rb2d.transform.position.x > maxLeft) {
 
-
-			transform.localScale = new Vector3 (-2f, 2f, 1f);
-			rb2d.AddForce(new Vector2(-movementSpeed, 0));
-
-
-
-
-		}
+//		}
 
 	}
 
