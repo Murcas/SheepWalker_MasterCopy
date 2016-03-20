@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 12a40f484a15e6942a02b780c29e0b92
+timeCreated: 1458470383
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: NinjaRun_0
+    21300002: NinjaRun_1
+    21300004: NinjaRun_2
+    21300006: NinjaRun_3
+    21300008: NinjaRun_4
+    21300010: NinjaRun_5
+    21300012: NinjaRun_6
+    21300014: NinjaRun_7
+    21300016: NinjaRun_8
+    21300018: NinjaRun_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: NinjaRun_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 4
+        width: 100
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaRun_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 2
+        width: 99
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaRun_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 2
+        width: 103
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaRun_3
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 10
+        width: 107
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaRun_4
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 4
+        width: 105
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaRun_5
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 5
+        width: 99
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaRun_6
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 3
+        width: 97
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaRun_7
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 5
+        width: 100
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaRun_8
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 13
+        width: 100
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: NinjaRun_9
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 6
+        width: 99
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
