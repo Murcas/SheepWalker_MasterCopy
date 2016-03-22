@@ -12,48 +12,25 @@ public class RamboScript : MonoBehaviour
 	CircleCollider2D headbandCollider;
 	GameObject ramboHeadband;
 	SheepController sheepController;
+	Sleepwalker sleepwalker;
 	//SheepStamina sheepStamina;
 	bool headBandActive;
 	
 	void Awake () 
 	{
 		ramboHeadband = GameObject.FindGameObjectWithTag ("RamboHeadband");
-		//ramzooka = GameObject.FindGameObjectWithTag ("Ramzooka");
+
 		sheepController = FindObjectOfType<SheepController> ();
-		//sheepStamina = FindObjectOfType<SheepStamina> ();
+
 		headbandSprite = ramboHeadband.GetComponent<SpriteRenderer>();
 		headbandCollider = ramboHeadband.GetComponent<CircleCollider2D>();
 	}
 
-	void RamboBazooka()
-	{
-		if(headBandActive == true)
-		{
-			//ramzooka.SetActive(true);
-		}
-		else
-		{
-			//ramzooka.SetActive(false);
-		}
-	}
+
 	
 	void FixedUpdate () 
 	{
-		if(headBandActive == true)
-		{
-			//sheepController.jumpPower = 700f;
-			//ramboSlider.value -= Time.deltaTime;
-			//ramboText.text = (" " + ramboSlider.value);
-		}
-
-//		if(ramboSlider.value == 0)
-//		{
-//			headBandActive = false;
-//			sheepController.jumpPower = 400f;
-//			sheepController.maxSpeed = 5;
-//		}
-
-		RamboBazooka ();
+	
 	
 	}
 
@@ -66,8 +43,10 @@ public class RamboScript : MonoBehaviour
 			headbandSprite.enabled = false;
 			headbandCollider.enabled = false;
 			sheepController.isNinja = true;
-			sheepController.MovementSpeed = sheepController.MovementSpeed * 50;
+			sheepController.movementSpeed = sheepController.movementSpeed * 50;
 			sheepController.jumpPower = sheepController.jumpPower * 1.5f;
+			sheepController.maxSpeed = sheepController.maxSpeed * 2;
+			sleepwalker.nudgeUp = sleepwalker.nudgePower * 2;
 
 		}
 		

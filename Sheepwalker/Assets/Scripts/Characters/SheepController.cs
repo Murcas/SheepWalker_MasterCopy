@@ -1,35 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SheepController : MonoBehaviour 
+public class SheepController : CharacterController
 {
-	public float maxSpeed =3;
-	public float MovementSpeed = 10f;
-	public float jumpPower = 50f;
-	public float slopeFriction;
-
+	public float jumpPower;
+	public float maxSpeed = 5;
 	public float squatAmount; 
 	private bool doubleJumped;
-	private bool facingRight;
-
-	[SerializeField]
-	private Transform[] groundPoints;
-
-	[SerializeField]
-	private float groundRadius;
-
-	[SerializeField]
-	private LayerMask whatIsGround;
-
-	private bool isGrounded;
-
 	public bool isNudging = false;
 	private bool isSquatting = false;
-	public Rigidbody2D rb2d;
-	private Animator anim;
-
 	public Sleepwalker sleepwalker;
-
 	public bool isNinja;
 
 	
@@ -51,57 +31,31 @@ public class SheepController : MonoBehaviour
 			anim.SetTrigger("NinjaJump");
 		}
 
+		if (isGrounded) {
 
-
-
-		if (isGrounded) 
-
+			anim.ResetTrigger ("NinjaJump");
+			anim.SetBool ("NinjaLanding", false);			
 			doubleJumped = false;
 
-			if (Input.GetKeyDown (KeyCode.UpArrow) && isGrounded) 
-
-				Jump ();
+		}
+		
+		if (Input.GetKeyDown (KeyCode.UpArrow) && isGrounded) {
+			Jump ();
+		}
+		
+		if (Input.GetKeyDown (KeyCode.UpArrow) && !isGrounded && !doubleJumped) {
 			
-
-			if (Input.GetKeyDown (KeyCode.UpArrow) && !isGrounded && !doubleJumped) {
-				
-				Jump ();
-				doubleJumped = true;
-			}
+			Jump ();
+			doubleJumped = true;
+		}
 
 		
-
-		if (Input.GetKeyDown(KeyCode.Space))
-		{
-			anim.SetBool ("isNudging", true);
-			isNudging = true;
-		}
-
-		if (Input.GetKeyUp(KeyCode.Space))
-		{
-			anim.SetBool ("isNudging", false);
-			isNudging = false;
-		
-		}
-
-		if (Input.GetKeyDown(KeyCode.DownArrow))
-		{
-			anim.SetBool ("isSquatting", true);
-			isSquatting = true;
-
-		}
-		
-		if (Input.GetKeyUp(KeyCode.DownArrow))
-		{
-			anim.SetBool ("isSquatting", false);
-			isSquatting = false;
-			
-		}
+		Behaviour ();
 
 	}
 	
 
-		//uses for physics movement
+	//uses for physics movement
 	void FixedUpdate()
 	{
 
@@ -109,13 +63,13 @@ public class SheepController : MonoBehaviour
 
 		HandleMovement (horizontal);
 
-		Flip (horizontal);
+		ChangeDirection (horizontal);
 
 		HandleLayers ();
 
 		isGrounded = IsGrounded ();
 
-		// limiting the speed of the player
+		 //limiting the speed of the player
 		if(rb2d.velocity.x > maxSpeed)
 		{
 			rb2d.velocity = new Vector2(maxSpeed,rb2d.velocity.y);
@@ -130,27 +84,6 @@ public class SheepController : MonoBehaviour
 		NormalizeSlope ();
 	}
 
-
-	void NormalizeSlope () { 
-		// Attempt vertical normalization 
-		if (isGrounded) { 
-			RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 1f, whatIsGround); 
-			
-			if (hit.collider != null && Mathf.Abs(hit.normal.x) > 0.1f) { 
-				Rigidbody2D body = GetComponent<Rigidbody2D>(); 
-				// Apply the opposite force against the slope force  
-				// You will need to provide your own slopeFriction to stabalize movement 
-				body.velocity = new Vector2(body.velocity.x - (hit.normal.x * slopeFriction), body.velocity.y); 
-				
-				
-				//Move Player up or down to compensate for the slope below them 
-				Vector3 pos = transform.position; 
-				pos.y += -hit.normal.x * Mathf.Abs(body.velocity.x) * Time.deltaTime * (body.velocity.x - hit.normal.x > 0 ? 1 : -1); 
-				transform.position = pos; 
-			} 
-		} 
-	}
-
 	public void Jump()
 		
 	{
@@ -160,28 +93,33 @@ public class SheepController : MonoBehaviour
 	}
 
 
- 	private void HandleMovement(float horizontal) 
+ 	private void HandleMovement(float horizontal)
 
 	{
 
-		if (rb2d.velocity.y < 0) 
+		if (rb2d.velocity.y <= 0) 
 		{
 			anim.SetBool("NinjaLanding", true);
 		}
-		rb2d.velocity = new Vector2 (horizontal * MovementSpeed, rb2d.velocity.y);
+
+		if (isGrounded) {
+
+			//transform.position += Vector3.right * movementSpeed * Time.deltaTime;
+			rb2d.velocity = new Vector2 (horizontal * movementSpeed, rb2d.velocity.y);
+		}
+
 		anim.SetFloat ("speed", Mathf.Abs (horizontal));
+
 	}
 
-	private void Flip (float horizontal)
+	private void ChangeDirection (float horizontal)
 	
 	{
 		if (horizontal > 0 && !facingRight || horizontal < 0 && facingRight) 
 		
 		{
-			facingRight = !facingRight;
-			Vector3 theScale = transform.localScale;
-			theScale.x *= -1;
-			transform.localScale = theScale;
+
+			Flip ();
 			
 			
 		}
@@ -211,29 +149,36 @@ public class SheepController : MonoBehaviour
 
 	}
 
-	private bool IsGrounded()
+	private void Behaviour()
 
 	{
-		if (rb2d.velocity.y <= 0) 
+		if (Input.GetKeyDown(KeyCode.Space))
 		{
-			foreach (Transform point in groundPoints)
-			{
-				Collider2D[] colliders = Physics2D.OverlapCircleAll (point.position, groundRadius, whatIsGround);
-
-				for(int i = 0; i < colliders.Length; i++) 
-
-				{
-					if(colliders[i].gameObject != gameObject) 
-					{
-						anim.ResetTrigger("NinjaJump");
-						anim.SetBool("NinjaLanding", false);
-						return true;
-					}
-				}
-
-			}
+			anim.SetBool ("isNudging", true);
+			isNudging = true;
 		}
-		return false;
+		
+		if (Input.GetKeyUp(KeyCode.Space))
+		{
+			anim.SetBool ("isNudging", false);
+			isNudging = false;
+			
+		}
+		
+		if (Input.GetKeyDown(KeyCode.DownArrow))
+		{
+			anim.SetBool ("isSquatting", true);
+			isSquatting = true;
+			
+		}
+		
+		if (Input.GetKeyUp(KeyCode.DownArrow))
+		{
+			anim.SetBool ("isSquatting", false);
+			isSquatting = false;
+			
+		}
+
 	}
 
 }

@@ -23,13 +23,10 @@ public class NudgeTesterScript : MonoBehaviour
 		if (col.gameObject.tag == "Sleepwalker") 
 		{
 
-		//	Debug.Log ("Touching Sleepwalker!");
-
 			if(Input.GetKeyDown(KeyCode.Space)) 
 			{
-				col.gameObject.GetComponent<Sleepwalker>().HasBeenNudged ();
 
-			//	col.transform.position = sheepController.transform.position;
+				col.gameObject.GetComponent<Sleepwalker>().HasBeenNudged ();
 			
 			}
 
@@ -41,10 +38,6 @@ public class NudgeTesterScript : MonoBehaviour
 
 		}
 
-
-
-		
-		
 	}
 
 }

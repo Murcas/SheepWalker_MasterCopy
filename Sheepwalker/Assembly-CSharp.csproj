@@ -45,13 +45,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\RamboScript.cs" />
      <Compile Include="Assets\Scripts\BackgroundPhysics\BackgroundFollow.cs" />
      <Compile Include="Assets\Scripts\BackgroundPhysics\BackgroundScroller.cs" />
      <Compile Include="Assets\Scripts\BackgroundPhysics\LevelManager.cs" />
      <Compile Include="Assets\Scripts\BackgroundPhysics\Parallaxing.cs" />
      <Compile Include="Assets\Scripts\BackgroundPhysics\SmoothCamera.cs" />
+     <Compile Include="Assets\Scripts\Characters\CharacterController.cs" />
      <Compile Include="Assets\Scripts\Characters\NudgeTesterScript.cs" />
+     <Compile Include="Assets\Scripts\Characters\RamboScript.cs" />
      <Compile Include="Assets\Scripts\Characters\SWControllerTest.cs" />
      <Compile Include="Assets\Scripts\Characters\SheepController.cs" />
      <Compile Include="Assets\Scripts\Characters\Sleepwalker.cs" />
@@ -66,6 +67,11 @@
      <Compile Include="Assets\Scripts\Traps\KillScript.cs" />
      <Compile Include="Assets\Scripts\Traps\SawScript.cs" />
      <Compile Include="Assets\Scripts\Traps\SlimeScript.cs" />
+     <Compile Include="Assets\Scripts\UI\SheepStamina.cs" />
+     <Compile Include="Assets\Scripts\UI\SleepwalkerHealth.cs" />
+     <Compile Include="Assets\Scripts\UI\StartMenu.cs" />
+     <Compile Include="Assets\Scripts\UI\ThornBushScript.cs" />
+     <Compile Include="Assets\Scripts\UI\WoolBallScript.cs" />
      <Compile Include="Assets\Sting_Move.cs" />
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
